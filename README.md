@@ -293,7 +293,7 @@ When Flatcar boots, these services **start automatically**, letting you jump rig
 
 ## Example: Running Flatcar Locally with QEMU 🕹️
 
-If you prefer a **local** setup on your own machine (for testing, development, or just tinkering around), you can run Flatcar Container Linux in a **QEMU** virtual machine. Below is an example workflow. For more details, refer to the [official Flatcar Docs on QEMU](https://www.flatcar.org/docs/latest/provisioning/booting-with-qemu/)-they have more thorough instructions, including different networking and drive configurations.
+If you prefer a **local** setup on your own machine (for testing, development, or just tinkering around), you can run Flatcar Container Linux in a **QEMU** virtual machine. Below is an example workflow. For more details, refer to the [official Flatcar Docs on QEMU](https://www.flatcar.org/docs/latest/provisioning/booting-with-qemu/) - they have more thorough instructions, including different networking and drive configurations.
 
 ---
 
