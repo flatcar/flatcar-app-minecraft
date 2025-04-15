@@ -14,6 +14,9 @@
 
 # Flatcar Minecraft Server
 
+<div align="center">
+  <img src="./imgs/flatcar_mc_logo.png" width="50%">
+</div>
 
 > **A lightweight, containerized PaperMC setup on [Flatcar Container Linux](https://www.flatcar.org/).**
 > **Easily deployable on Azure or any other cloud/provider.**
