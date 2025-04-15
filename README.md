@@ -410,7 +410,7 @@ You can also use a GUI based program like [Filezilla](https://filezilla-project.
 
 ![SFTP](./imgs/new_connection.png)
 
-Then fill out the necceserry fields:
+Then fill out the necessary fields:
   1. In our case because we are running it locally, the `IP` is going to be localhost or simply `127.0.0.1`.
   2. The port for `SFTP` (default is `2223` unless you have changed it)
   3. Select the `Key file` option as Flatcar is passworldless
