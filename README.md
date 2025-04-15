@@ -119,7 +119,7 @@ Please find information on:
 Although our walkthrough includes locally hosted as well as **Azure Cloud** hosted examples, you can adapt these steps to **any platform** that supports [Flatcar Container Linux](https://www.flatcar.org/). Here’s what you’ll need:
 
 - **Flatcar-Ready Environment**
-  Any server or virtual machine running a Flatcar image, or the ability to create one (via Azure, AWS, your own hypervisor, etc.). If you are going to host it locally, please reffer to the [Flatcar tutorial](https://www.flatcar.org/docs/latest/tutorial/) that details what you will need as well as how to use.
+  Any server or virtual machine running a Flatcar image, or the ability to create one (via Azure, AWS, your own hypervisor, etc.). If you are going to host it locally, please refer to the [Flatcar tutorial](https://www.flatcar.org/docs/latest/tutorial/) that details what you will need as well as how to use.
 
 - **SSH Keys**
   Flatcar uses the `core` user with no default password, so you’ll typically log in with SSH keys. Make sure you have a key pair ready.
