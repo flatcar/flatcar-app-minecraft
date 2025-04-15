@@ -108,7 +108,7 @@ Please find information on:
 
 ---
 
-<p align="center">
+<p style="text-align: center">
   <em>Ready to launch your PaperMC server on Flatcar? Let’s dive in!</em>
 </p>
 
