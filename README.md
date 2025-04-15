@@ -14,7 +14,7 @@
 
 # Flatcar Minecraft Server
 
-<div align="center">
+<div style="text-align: center">
   <img src="./imgs/flatcar_mc_logo.png" width="50%">
 </div>
 
