@@ -263,11 +263,8 @@ Use an SFTP client (e.g., FileZilla, WinSCP, or the sftp command) with your **SS
 bash
 sftp -i ~/.ssh/id_rsa -P 2223 core@<vm-ip>
 
-<!-- TODO more visual helps -->
-
 
 You’ll see the papermc directory, and you can upload plugins, worlds, or other server files directly.
-
 
 
 ## Summary of `config.yaml` Contents 📄
@@ -511,7 +508,6 @@ SUBNET_NAME="default"
 
 #### Picking a VM Size & Understanding Azure Pricing
 
-<!-- TODO: Confirm minimal ram for host -->
 - **Memory & CPU**: If your Docker container uses 4G (`MC_RAM=4G`), you’ll need extra RAM overhead for the OS (Flatcar) and Docker’s own usage. For a 4G container, consider a VM with **at least** 5 GB of total memory.
 - **Pricing**: Different VM series (e.g., B-series, D-series, E-series) have varying costs and performance. Research Azure’s [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to find a size that balances **cost** and **performance**.
 - **Location**: Azure regions have slightly different pricing and resource availability. Pick one near your players or at a price you prefer.
