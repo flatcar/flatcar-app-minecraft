@@ -425,7 +425,7 @@ You should see a folder named `papermc`:
 
 ![SFTP home](./imgs/sftp_home.png)
 
-This is where all of the game files exist and you can edit/download/ them upload new ones etc.:
+This is where all of the game files exist and you can edit/download them or upload new ones etc.:
 
 ![SFTP papermc](./imgs/sftp_papermc.png)
 
