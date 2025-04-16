@@ -279,8 +279,8 @@ This configuration file sets up the Flatcar Minecraft Server by creating three e
 3. **/etc/systemd/system/minecraft.service**
    - Configures the Docker run command that launches the PaperMC server container. This service loads the environment variables from papermc.env, binds ports 25565 (Minecraft) and 25575 (RCON), and mounts the papermc-data volume for persistent storage.
 
-Additionally, the systemd section in `config.yaml` ensures that the following units are enabled at boot:
-- `docker.service` (ensures Docker starts at boot).
+When Flatcar boots, Docker is already enabled by default. The systemd section
+in `config.yaml` ensures that the following units are enabled at boot:
 - `minecraft.service` (the main server).
 - `sshd-sftp.service` (the optional SFTP process).
 
@@ -332,7 +332,7 @@ Get-Content -Raw .\config.yaml | docker run --rm -i quay.io/coreos/butane:latest
 
 ### 5.3 Launch QEMU with Port Forwarding
 
-Before launching QEMU, ensure you have downloaded the latest Flatcar QEMU image and helper script from the official Flatcar website. You can obtain these files from the [Flatcar Releases](https://www.flatcar.org/releases/) page or review the [Flatcar Documentation](https://www.flatcar.org/docs/latest/) for detailed instructions.
+Before launching QEMU, ensure you have downloaded the latest Flatcar QEMU image and helper script from the official Flatcar website. You can obtain these files from the [Flatcar Releases](https://www.flatcar.org/releases/) page or review the [Flatcar Documentation](https://www.flatcar.org/docs/latest/) for detailed instructions and insights into managing Flatcar Container Linux.
 
 Follow these steps if you’re new to Flatcar:
 
@@ -351,12 +351,12 @@ Follow these steps if you’re new to Flatcar:
 3. Launch QEMU with port forwarding to access your services:
    ```bash
    ./flatcar_production_qemu.sh \
-     -M 6144 \            # Allocate 6144 MB RAM to the VM
-     -f 25565:25565 \     # Forward Minecraft port (host to guest)
-     -f 25575:25575 \     # Forward RCON port (host to guest)
-     -f 2223:2223 \       # Forward SFTP port (host to guest)
-     -i ./config.ign \    # Provide the Ignition config generated from Butane
-     -- -display curses   # Display QEMU output in terminal mode (adjust as needed)
+     -M 6144 \
+     -f 25565:25565 \
+     -f 25575:25575 \
+     -f 2223:2223 \
+     -i ./config.ign \
+     -- -display curses
    ```
 
 This command ensures:
@@ -465,7 +465,7 @@ Below is an **example** workflow for hosting this Flatcar Minecraft setup on **M
    az login
    ```
 3. **Important**: The Azure Cloud Shell environment is **temporary/ephemeral**. Your files or SSH keys may be lost if the shell is restarted or times out.
-   - If you generate new SSH keys in Cloud Shell, be sure to **back them up** locally; otherwise, you **won’t** be able to log into your VM later if the shell resets.
+   - If you generate new SSH keys in Cloud Shell, be sure to **back them up** locally; otherwise, you **won't** be able to log into your VM later if the shell resets.
 
 ---
 

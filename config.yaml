@@ -134,10 +134,6 @@ storage:
 
 systemd:
   units:
-    # Enable Docker
-    - name: docker.service
-      enabled: true
-
     # Enable the main Minecraft service
     - name: minecraft.service
       enabled: true
