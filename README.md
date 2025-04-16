@@ -335,10 +335,10 @@ Before launching QEMU, ensure you have downloaded the latest Flatcar QEMU image 
 
 Follow these steps if you’re new to Flatcar:
 
-1. Download the helper script (`flatcar_production_qemu.sh`) from the git repo using your browser or command-line tools like `wget`.
+1. Download the helper script (`flatcar_production_qemu.sh`) from the releases server using your browser or command-line tools like `wget`.
 
     ```bash
-    wget https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu.sh
+    wget https://beta.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu.sh
     ```
 
 2. Make the helper script executable:
