@@ -459,7 +459,7 @@ Below is an **example** workflow for hosting this Flatcar Minecraft setup on **M
 
 ### 6.1 Connect to Azure & Understand the Cloud Shell
 
-1. **Open Azure Cloud Shell** in your browser, or use the [**Azure CLI**](https://learn.microsoft.com/en-us/cli/azure/) locally.
+1. **Open Azure Cloud Shell** in your browser, or use the [**Azure CLI**](https://learn.microsoft.com/cli/azure/) locally.
 2. **Log in** to Azure:
    ```bash
    az login
