@@ -1,0 +1,17 @@
+name: Validate Butane Configuration
+on:
+  push:
+    # Run on all branches (no branch filter)
+  pull_request:
+
+jobs:
+  validate-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Validate config.yaml with Butane Docker image
+        run: |
+          # Use the latest Butane Docker image from Quay.io
+          docker run --rm -v $(pwd):/workspace:ro quay.io/coreos/butane:latest \
+            --pretty --strict --output /dev/null /workspace/config.yaml
