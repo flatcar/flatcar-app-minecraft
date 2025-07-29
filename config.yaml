@@ -27,7 +27,7 @@ storage:
           RCON_PORT=25575
 
           # Total Docker container memory. Adjust as needed (e.g., 2G, 4G, 8G etc.).
-          DOCKER_RAM=74G
+          DOCKER_RAM=4G
 
           # Memory allocated for the Java process running the Minecraft server.
           # Set this to a value slightly lower than DOCKER_RAM to provide room for system overhead.
