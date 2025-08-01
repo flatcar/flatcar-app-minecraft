@@ -1,2 +1,5 @@
-* @flatcar/flatcar-maintainers
-* @John15321
+# CODEOWNERS file for flatcar-app-minecraft
+# This file defines who is responsible for code review
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @flatcar/flatcar-integrations
