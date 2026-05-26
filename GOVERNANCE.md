@@ -7,5 +7,3 @@ For details on the Flatcar project governance model, decision-making process, an
 ## Repository-Specific Governance
 
 Any governance details specific to this repository will be listed here.
-
-<!-- Add repo-specific governance notes below this line -->
